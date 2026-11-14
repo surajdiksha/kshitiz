@@ -37,9 +37,9 @@
     .visual{min-height:405px;position:relative;display:grid;place-items:center;isolation:isolate}
     .halo{position:absolute;inset:8% 4%;border:1px solid #ffffff22;border-radius:50%;transform:rotate(-23deg) scaleY(.68)}
     .halo.two{inset:15% 11%;border-color:#d7f17140;transform:rotate(29deg) scaleY(.68)}
-    .orb{position:relative;width:clamp(190px,25vw,290px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 34% 28%,#fff4d2 0,#f5d29a 17%,#e99472 40%,#915c71 68%,#35364f 100%);box-shadow:0 0 110px #e99b772b,inset -20px -25px 42px #291e3c80}
+    .orb{position:relative;width:clamp(190px,25vw,290px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:#302b35;box-shadow:0 0 110px #e99b772b,inset -20px -25px 42px #291e3c80;overflow:hidden;isolation:isolate}.orb .portrait{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:50%;filter:saturate(.88) contrast(.96)}.orb:before{content:"";position:absolute;inset:0;z-index:1;border-radius:50%;background:linear-gradient(155deg,#f9d9a22b 0%,transparent 42%,#3725447a 100%);pointer-events:none}
     .orb:after{content:"";position:absolute;inset:13%;border:1px solid #fff9e24d;border-radius:50%;transform:translate(22px,-16px)}
-    .orb b{font:italic clamp(6rem,12vw,9rem) Georgia,serif;font-weight:400;color:#2b2230;letter-spacing:-.13em;transform:translate(-7px,-6px)}
+    
     .spark{position:absolute;color:var(--lime);font-size:1.15rem}.s1{top:13%;left:14%}.s2{top:24%;right:9%;color:var(--orange)}.s3{bottom:13%;left:19%;font-size:.8rem}
     .orbit-label{position:absolute;right:0;bottom:9%;font-size:.62rem;letter-spacing:.18em;color:var(--muted);writing-mode:vertical-rl}
     .section{padding:77px 0;border-top:1px solid var(--line)}
@@ -92,10 +92,10 @@
             </a>
           </div>
         </div>
-        <div class="visual" aria-hidden="true">
-          <span class="spark s1">✳</span><span class="spark s2">✦</span><span class="spark s3">✧</span>
-          <div class="halo"></div><div class="halo two"></div><div class="orb"><b>K</b></div>
-          <span class="orbit-label">A PERSONAL INTRODUCTION</span>
+        <div class="visual">
+          <span class="spark s1" aria-hidden="true">✳</span><span class="spark s2" aria-hidden="true">✦</span><span class="spark s3" aria-hidden="true">✧</span>
+          <div class="halo" aria-hidden="true"></div><div class="halo two" aria-hidden="true"></div><div class="orb"><img class="portrait" src="assets/kshitiz.jpg" alt="Kshitiz looking out over a landscape"></div>
+          <span class="orbit-label" aria-hidden="true">A PERSONAL INTRODUCTION</span>
         </div>
       </section>
       <section class="section" aria-labelledby="words-title">
